@@ -1,4 +1,13 @@
-## Hi there 👋
+<h1 align="center">Hi 👋</h1>
+<img align="right" width="0" height="0" src="https://visitor-badge.laobi.icu/badge?page_id=mabarroso_visitor_badge_simple&left_color=royalblue&right_color=black"  />
+
+<h3 align="center">:hammer_and_wrench: Languages and Tools</h3>
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=bootstrap,cypress,css,dart,debian,docker,elasticsearch,flutter,git,github,gitlab,html,idea,ai,js,jquery,kubernetes,mongodb,mysql,nuxtjs,php,postgres,postman,rabbitmq,redis,sqlite,symfony,ubuntu,vite,vue&theme=light" alt="Skills and tools"/>
+  </a>
+</p>
 
 <!--
 **mabarroso/mabarroso** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
