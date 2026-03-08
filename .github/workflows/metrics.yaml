@@ -12,7 +12,18 @@ jobs:
       issues: read
       pull-requests: read
       
-    steps:                  
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+          
+      - name: Fix Docker installation conflicts
+        run: |
+          sudo apt-get remove -y containerd docker.io containerd.io
+          sudo apt-get update
+          sudo apt-get install -y docker.io jq
+              
       - name: Generate GitHub Metrics
         uses: lowlighter/metrics@v3.34
         with:
@@ -41,11 +52,11 @@ jobs:
           plugin_languages_threshold: 0%
           
           # LeetCode plugin
-          # plugin_leetcode: true
-          # plugin_leetcode_limit_recent: 2
-          # plugin_leetcode_limit_skills: 10
-          # plugin_leetcode_sections: solved, skills, recent
-          # plugin_leetcode_user: mabarroso
+          plugin_leetcode: true
+          plugin_leetcode_limit_recent: 2
+          plugin_leetcode_limit_skills: 10
+          plugin_leetcode_sections: solved, skills, recent
+          plugin_leetcode_user: mabarroso
           
           # Auto-commit configuration
           committer_token: ${{ secrets.GITHUB_TOKEN }}
