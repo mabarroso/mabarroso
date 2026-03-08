@@ -41,7 +41,7 @@ jobs:
           plugin_languages_threshold: 0%
           
           # LeetCode plugin
-          plugin_leetcode: true
+          plugin_leetcode: false
           plugin_leetcode_limit_recent: 2
           plugin_leetcode_limit_skills: 10
           plugin_leetcode_sections: solved, skills, recent
