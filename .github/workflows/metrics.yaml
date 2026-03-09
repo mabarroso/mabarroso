@@ -50,7 +50,13 @@ jobs:
           plugin_languages_recent_load: 300
           plugin_languages_sections: most-used
           plugin_languages_threshold: 0%
-          
+
+          # Stack Overflow plugin
+          plugin_stackoverflow: yes
+          plugin_stackoverflow_user: 1537447
+          plugin_stackoverflow_sections: answers-top,answers-recent,questions-top,questions-recent
+          plugin_stackoverflow_limit: 2
+
           # Auto-commit configuration
           committer_token: ${{ secrets.GITHUB_TOKEN }}
           committer_branch: main
