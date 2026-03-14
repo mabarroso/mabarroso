@@ -55,7 +55,7 @@ jobs:
           plugin_stackoverflow: yes
           plugin_stackoverflow_user: 1537447
           plugin_stackoverflow_sections: answers-top,answers-recent,questions-top,questions-recent
-          plugin_stackoverflow_limit: 2
+          plugin_stackoverflow_limit: 3
 
           # Auto-commit configuration
           committer_token: ${{ secrets.GITHUB_TOKEN }}
