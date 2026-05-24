@@ -52,9 +52,9 @@ jobs:
           plugin_languages_threshold: 0%
 
           # Stack Overflow plugin
-          plugin_stackoverflow: yes
+          plugin_stackoverflow: no
           plugin_stackoverflow_user: 1537447
-          plugin_stackoverflow_sections: top
+          plugin_stackoverflow_sections: none
           plugin_stackoverflow_limit: 3
 
           # Auto-commit configuration
